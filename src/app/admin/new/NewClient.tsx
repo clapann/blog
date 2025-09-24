@@ -106,17 +106,17 @@ export default function NewClient({ onSave }: { onSave: (formData: FormData) => 
 
                     <form id="save-form" action={onSave} className="mt-6 space-y-4">
                         <div>
-                            <label className="block text-sm text-[#9ca3af]">Title</label>
+                            <label className="block text-sm text-[#9ca3af]">title</label>
                             <input name="title" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="catchy title belongs here" className="mt-1 w-full rounded-md border border-[#25262a] bg-transparent px-3 py-2 text-[#0a0a0a] dark:text-white" />
                         </div>
 
                         <div>
-                            <label className="block text-sm text-[#9ca3af]">Description</label>
+                            <label className="block text-sm text-[#9ca3af]">description</label>
                             <input name="description" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="summarize the blog post" className="mt-1 w-full rounded-md border border-[#25262a] bg-transparent px-3 py-2 text-[#0a0a0a] dark:text-white" />
                         </div>
 
                         <div>
-                            <label className="block text-sm text-[#9ca3af]">Content (Markdown)</label>
+                            <label className="block text-sm text-[#9ca3af]">content</label>
                             <textarea
                                 name="content"
                                 value={content}
