@@ -141,7 +141,7 @@ export default function EditClient({ blog, onSave, onDelete, }: { blog: BlogCont
                     </div>
                 </div>
             ) : (
-                <div>
+                <div className="text-sm">
                     <button type="button" onClick={handleBackFromEdit} className={`inline-flex items-center gap-2 cursor-pointer ${showUnsavedWarning ? 'text-[#ef4444]' : 'text-[#374151] dark:text-[#9ca3af]'}`}>
                         <ArrowLeft size={18} /> <p id="go-back">{showUnsavedWarning ? "you have unsaved changes, you sure?" : "go back"}</p>
                     </button>

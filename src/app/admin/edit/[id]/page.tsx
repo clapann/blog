@@ -57,7 +57,7 @@ export default async function EditBlogPage({ params }: Params) {
 
     return (
         <div className="min-h-screen grid bg-white dark:bg-[#09090b] grid-rows-[minmax(14vh,1fr)_auto_minmax(14vh,1fr)]">
-            <div className="w-full max-w-3xl justify-self-center text-left px-[2.5vh] row-start-2 text-sm">
+            <div className="w-full max-w-3xl justify-self-center text-left px-[2.5vh] row-start-2">
                 <EditClient blog={blog} onSave={onSave} onDelete={onDelete} />
             </div>
         </div>
